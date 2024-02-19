@@ -6,15 +6,27 @@ function scrollToSelect()
 }
 document.getElementById("scrollButton").addEventListener("click",scrollToSelect);
 function changeColor(button)
+
 { 
-    const selectedButtons=document.querySelectorAll(".custom");
-    if (selectedButtons.length >= 4 && !button.classList.contains('custom')) {
-        return;
-    }
+    const isSelected = button.classList.contains('custom');
+    if(!isSelected){
+        const selectedButtons=document.querySelectorAll(".custom");
+        if (selectedButtons.length >= 4) {
+            return;
+        }
+    
     button.classList.add('custom');
     calculateSeats();
     seatsAdded();
     addRow(button);
+    }
+    else
+    {
+        button.classList.remove('custom');
+        calculateSeats();
+        seatsAdded();
+        removeRow(button);
+    }
    
 }
 function calculateSeats()
@@ -55,5 +67,51 @@ function addRow(button)
         newRow.appendChild(staticCell2);
 
         tableBody.appendChild(newRow);
+
+        cost();
+}
+function removeRow(button) {
+    const seatNumber = button.innerText;
+    const rowsRemove = document.querySelectorAll('#tableBody tr td:first-child');
+    rowsRemove.forEach(row => {
+        if (row.innerText === seatNumber) {
+            row.parentElement.remove();
+        }
+        cost();
+    });
+}
+
+function cost()
+{
+        const selectedButtons = document.querySelectorAll(".custom");
+        const costPerSeat = 550;
+        const totalCost = selectedButtons.length * costPerSeat;
+    
+        const tableBody = document.getElementById('tableBody');
+    
+        const oldTotalRow = document.getElementById('totalRow');
+        if (oldTotalRow) {
+            oldTotalRow.remove();
+        }
+    
+        const totalRow = document.createElement('tr');
+    
+        const totalCellLabel = document.createElement('td');
+        totalCellLabel.innerText = "Total Cost";
+        totalRow.appendChild(totalCellLabel);
+    
+        const totalCellCost = document.createElement('td');
+        totalCellCost.innerText = totalCost;
+        totalRow.appendChild(totalCellCost);
+    
+        totalRow.id = 'totalRow';
+        tableBody.appendChild(totalRow);
+}
+function showSucces()
+{
+    const hiddenSection=document.getElementById('hiddensection');
+    hiddenSection.classList.remove('hidden');
+    const next=document.getElementById("next");
+    next.scrollIntoView({behavior:"smooth"});
 
 }

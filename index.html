@@ -23,23 +23,8 @@
        <div class="navbar container mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl font-extrabold text-[36px]">P-Ticket</a>
+            
+              <a class="btn btn-ghost text-xl lg:font-extrabold lg:text-[36px] ">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -61,11 +46,11 @@
         <section>
               <div class="my-4 container mx-auto">
                 <img class="mx-auto" src="./images/banner.png" alt="">
-                <div class="text-center -translate-y-96">
-                    <h3 class="font-extrabold text-[64px] text-white my-3">End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span></h3>
-                    <p class="text-[18px] text-white my-3">Yes, you can run unit tests and view the results directly within the app.
+                <div class="text-center lg:-translate-y-96 -translate-y-36">
+                    <h3 class="font-extrabold lg:text-[64px] text-[30px] text-white lg:my-3">End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span></h3>
+                    <p class="text-[18px] text-white lg:my-3">Yes, you can run unit tests and view the results directly within the app.
                          The integrated testing features allow for a streamlined .</p>
-                 <button class="btn bg-lime-400 text-black border-none" id="scrollButton">Buy Tickets</button>
+                 <button class="btn bg-green-400 text-black border-none" id="scrollButton">Buy Tickets</button>
                 </div>
               </div>
         </section>
@@ -73,9 +58,9 @@
         <section>
             <div class="container mx-auto">
                 <h3 class="text-center font-extrabold text-[40px] my-4">Best offers for you</h3>
-                <div class="flex gap-10 items-center justify-center">
+                <div class="flex lg:flex-row flex-col  lg:gap-10 gap-3 items-center justify-center">
                     <div class="flex gap-0 bg-amber-500 rounded-xl">
-                        <div class="p-6">
+                        <div class="lg:p-6 p-2">
                             <h4 class="font-extrabold">15% OFF</h4>
                             <p class="text-[#03071280]">on your next purchase
                                 use by January 2024</p>
@@ -98,20 +83,20 @@
                     </div>
                 </div>
                 <div class="flex justify-center my-6">
-                    <button class="btn btn-outline border-lime-500 text-lime-500 ">See All Offers</button>
+                    <button class="btn btn-outline border-green-500 text-lime-500 ">See All Offers</button>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="border-lime-500 rounded-xl p-4 bg-neutral-100">
+            <div class="border-green-500 rounded-xl p-4 bg-neutral-100">
                <div class="container mx-auto my-3">
                 <h3 class="my-3 font-extrabold text-[40px] text-center">P.H Paribahan</h3>
                 <p class="text-center my-2 text-[18px]">Yes, you can run unit tests and view the results directly within the app.
                      The integrated testing features allow for a streamlined .</p>
-                        <div class="bg-white rounded-xl flex justify-evenly items-center container mx-auto gap-4 w-3/4">
+                        <div class="bg-white rounded-xl flex lg:flex-row flex-col p-2 justify-evenly items-center container mx-auto gap-4 w-3/4">
                             <div>
-                                <div class="flex justify-between gap-2 items-center my-3">
+                                <div class="flex lg:flex-row flex-col justify-between gap-2 items-center my-3">
                                     <i class="fa-solid fa-van-shuttle text-[32px]"></i>
                                     <div>
                                         <h4 class="text-[28px] font-bold">Greenline Paribahan</h4>
@@ -125,15 +110,15 @@
                                     
                                 </div>
                                 <div class="bg-gray-200 rounded-xl p-4 my-3">
-                                    <div class="flex justify-between my-2">
+                                    <div class="flex lg:flex-row flex-col justify-between my-2">
                                     <h5 class="text-[18px]">Route</h5>
                                     <p class="text-[18px]">Dhaka-Sylhet</p>
                                     </div>
-                                    <div class="flex justify-between my-2">
+                                    <div class="flex lg:flex-row flex-col  justify-between my-2">
                                         <h5 class="text-[18px]">Departure Time</h5>
                                         <p class="text-[18px]">9.00 p.m</p>
                                     </div>
-                                    <div class="flex justify-between gap-2 my-2">
+                                    <div class="flex lg:flex-row flex-col  justify-between gap-2 my-2">
                                         <button class="btn bg-gray-300 text-black border-none text-[18px]">Boarding Point - Laxmipur</button>
                                         <button class="btn bg-gray-300 text-black border-none text-[18px]">Dropping Point - Bogura</button>
                                         <button class="btn bg-gray-300 text-black border-none text-[18px]">Est. Time - 11 Hour</button>
@@ -195,7 +180,7 @@
                               </div>
                         </div>
                         <div>
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400 w-full" id="B4">Next</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-400 w-full" id="next" onclick="showSucces()">Next</button>
                         </div>
                          
 
@@ -209,6 +194,17 @@
 
         </section>
        
+        <section>
+            <div class="container mx-auto my-8 text-center hidden" id="hiddensection">
+                <img src="./images/success.png" class="mx-auto" alt="">
+                <h4 class="font-bold text-[20px] my-3">Success!</h4>
+                <p class="text-[18px] my-3">Thank You For Booking Our Bus Seats. <br>
+                We Are Working Hard To Find The Best Service & Deals For You <br>
+            Shortly You Will Get An Confirmation Email</p>
+            <button class="btn bg-green-300 text-black border-none">Continue</button>
+
+            </div>
+        </section>
     </main>
     <script src="./app.js"></script>
 </body>
