@@ -5,7 +5,12 @@ function scrollToSelect()
     scrollTarget.scrollIntoView({behavior:"smooth"});
 }
 document.getElementById("scrollButton").addEventListener("click",scrollToSelect);
-function selectButton()
+function changeColor(button)
 {
-    const selectedButton=document.getElementById("")
+    const selectedButtons=document.querySelectorAll(".custom");
+    if (selectedButtons.length >= 4 && !button.classList.contains('custom')) {
+        return;
+    }
+    button.classList.toggle('custom');
+  
 }
