@@ -65,7 +65,7 @@
                     <h3 class="font-extrabold text-[64px] text-white my-3">End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span></h3>
                     <p class="text-[18px] text-white my-3">Yes, you can run unit tests and view the results directly within the app.
                          The integrated testing features allow for a streamlined .</p>
-                 <button class="btn bg-lime-400 text-black border-none">Buy Tickets</button>
+                 <button class="btn bg-lime-400 text-black border-none" id="scrollButton">Buy Tickets</button>
                 </div>
               </div>
         </section>
@@ -100,12 +100,123 @@
                 <div class="flex justify-center my-6">
                     <button class="btn btn-outline border-lime-500 text-lime-500 ">See All Offers</button>
                 </div>
-                
-
             </div>
+        </section>
+
+        <section>
+            <div class="border-lime-500 rounded-xl p-4 bg-neutral-100">
+               <div class="container mx-auto my-3">
+                <h3 class="my-3 font-extrabold text-[40px] text-center">P.H Paribahan</h3>
+                <p class="text-center my-2 text-[18px]">Yes, you can run unit tests and view the results directly within the app.
+                     The integrated testing features allow for a streamlined .</p>
+                        <div class="bg-white rounded-xl flex justify-evenly items-center container mx-auto gap-4 w-3/4">
+                            <div>
+                                <div class="flex justify-between gap-2 items-center my-3">
+                                    <i class="fa-solid fa-van-shuttle text-[32px]"></i>
+                                    <div>
+                                        <h4 class="text-[28px] font-bold">Greenline Paribahan</h4>
+                                        <p class="text-[18px]">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                    
+                                        
+            
+                                        <button class="btn bg-green-100 text-green-400 border-none"><img src="./images/seat-green.png" alt=""><span id="seatAvailable">0</span>seats left</button>
+                                    
+                                    
+                                </div>
+                                <div class="bg-gray-200 rounded-xl p-4 my-3">
+                                    <div class="flex justify-between my-2">
+                                    <h5 class="text-[18px]">Route</h5>
+                                    <p class="text-[18px]">Dhaka-Sylhet</p>
+                                    </div>
+                                    <div class="flex justify-between my-2">
+                                        <h5 class="text-[18px]">Departure Time</h5>
+                                        <p class="text-[18px]">9.00 p.m</p>
+                                    </div>
+                                    <div class="flex justify-between gap-2 my-2">
+                                        <button class="btn bg-gray-300 text-black border-none text-[18px]">Boarding Point - Laxmipur</button>
+                                        <button class="btn bg-gray-300 text-black border-none text-[18px]">Dropping Point - Bogura</button>
+                                        <button class="btn bg-gray-300 text-black border-none text-[18px]">Est. Time - 11 Hour</button>
+                                    </div>
+    
+                                </div>
+                            </div>
+                           <div class="my-3 text-center">
+                            <img src="./images/fare.png" class="mx-auto" alt="">
+                            <h3 class="text-[24px]">550 Taka</h3>
+                            <p class="text-[18px]">per seat</p>
+                           </div>
+                        </div>
+               </div>
+                  
+               <div class="container mx-auto my-4"> 
+                <div class="grid lg:grid-cols-2 align-middle gap-3" id="scrollToSelect">
+                    <div class=" border-gray-300 p-2 ">
+                        <div class=" p-2">
+                            <h3 class="text-left font-bold text-[25px] ">Select Your Seat</h3>
+                        </div>
+                        
+                        <div class="flex justify-between border-t-2 border-b-2 border-dashed border-gray-300 p-2">
+                          <div><p><span><img src="./images/seat-gray.png" alt=""></span> available</p></div> 
+                          <div><p><span> <img src="./images/seat-green.png" alt=""></span> selected</p></div> 
+                        </div>
+                        <div class="grid lg:grid-cols-5 gap-3">
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="A">A</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="A1" onclick="">A1</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="A2" onclick="">A2</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="A3" onclick="">A3</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="A4" onclick="">A4</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="B" >B</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="B1" onclick="">B1</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="B2" onclick="">B2</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="B3" onclick="">B3</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="B4" onclick="">B4</button>
+                        </div>
+                    </div>
+                    <div class=" p-2">
+                        <div class="border-b-2 border-dashed border-gray-300 p-2">
+                            <h3 class="text-left font-bold text-[25px] ">Select Your Seat</h3>
+                        </div>
+                        <div class="bg-neutral-300 m-2 p-2 rounded-xl">
+                            <div class="overflow-x-auto">
+                                <table class="table">
+                                  <!-- head -->
+                                  <thead>
+                                    <tr>
+                                    
+                                      <th>Seat <span id="seatNo">0</span></th>
+                                      <th>Class</th>
+                                      <th>Price</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <!-- row 1 -->
+                                    <tr>
+                                      <td id="seatNum">aa</td>
+                                      <td>Economy</td>
+                                      <td>550</td>
+                                    </tr>
+                                  
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400 w-full" id="B4">Next</button>
+                        </div>
+                         
+
+                    </div>
+                </div>
+
+               </div>
+
+                     
+            </div>
+
         </section>
        
     </main>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
