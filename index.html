@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>P Ticket</title>
+  
+     <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/3cdfd98cbe.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+   
 </head>
 <body>
+    <header>
+       <div class="navbar container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl font-extrabold text-[36px]">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold text-[18px]">Home</a></li>
+                <li><a class="font-bold text-[18px]">About</a></li>
+                <li><a class="font-bold text-[18px]">Destination</a></li>
+                <li><a class="font-bold text-[18px]">Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn flex gap-2 bg-[#1dd1001a] text-[#66ff66]">Bus<i class="fa-solid fa-bus"></i></a>
+             
+            </div>
+          </div>
+
+       </div>
+    </header>
+    <main>
+        <section>
+              <div class="my-4 container mx-auto">
+                <img class="mx-auto" src="./images/banner.png" alt="">
+                <div class="text-center -translate-y-96">
+                    <h3 class="font-extrabold text-[64px] text-white my-3">End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span></h3>
+                    <p class="text-[18px] text-white my-3">Yes, you can run unit tests and view the results directly within the app.
+                         The integrated testing features allow for a streamlined .</p>
+                 <button class="btn bg-lime-400 text-black border-none">Buy Tickets</button>
+                </div>
+              </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+                <h3 class="text-center font-extrabold text-[40px] my-4">Best offers for you</h3>
+                <div class="flex gap-10 items-center justify-center">
+                    <div class="flex gap-0 bg-amber-500 rounded-xl">
+                        <div class="p-6">
+                            <h4 class="font-extrabold">15% OFF</h4>
+                            <p class="text-[#03071280]">on your next purchase
+                                use by January 2024</p>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-extrabold">NEW15</h4>
+                            <p class="text-[#03071280]"> Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-0 bg-rose-300 rounded-xl">
+                        <div class="p-6">
+                            <h4 class="font-extrabold">20% OFF</h4>
+                            <p class="text-[#03071280]">on your next purchase
+                                use by January 2024</p>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-extrabold">Couple 20</h4>
+                            <p class="text-[#03071280]"> Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center my-6">
+                    <button class="btn btn-outline border-lime-500 text-lime-500 ">See All Offers</button>
+                </div>
+                
+
+            </div>
+        </section>
+       
+    </main>
     
 </body>
 </html>
